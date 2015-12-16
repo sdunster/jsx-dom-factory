@@ -1,0 +1,22 @@
+{
+  "name": "jsx-dom-factory",
+  "version": "1.0.0",
+  "description": "Factory for JSX-transpiled elements that uses document.createElement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Dunster",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdunster/jsx-dom-factory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sdunster/jsx-dom-factory/issues"
+  },
+  "homepage": "https://github.com/sdunster/jsx-dom-factory#readme"
+}
