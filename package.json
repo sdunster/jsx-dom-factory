@@ -1,6 +1,6 @@
 {
   "name": "jsx-dom-factory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Factory for JSX-transpiled elements that uses document.createElement",
   "main": "index.js",
   "scripts": {
