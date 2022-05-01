@@ -1,30 +1,29 @@
-var _ = require('underscore');
+import _ from 'underscore';
 
-module.exports = function(tag, attributes, children) {
-  var elem = document.createElement(tag);
+export default function createElement(tag, attributes, ...children) {
+  const elem = document.createElement(tag);
 
-  _.each(attributes, function(val, key) {
+  _.each(attributes, (val, key) => {
     elem.setAttribute(key, val);
   });
 
   // in-order traversal of sub-arrays
-  var handle_child = function(child) {
-    if(child.constructor === Array) {
-      _.each(child, function(c) {
-        handle_child(c);
+  function handleChild(child) {
+    if (child.constructor === Array) {
+      _.each(child, (c) => {
+        handleChild(c);
       });
-    }
-    else if(typeof child === 'string') {
+    } else if (typeof child === 'string') {
       elem.appendChild(document.createTextNode(child));
-    }
-    else {
+    } else {
       elem.appendChild(child);
     }
-  };
+  }
 
-  // children must be an array so unwrap the first level
-  _.each(children, function(child) {
-    handle_child(child);
+  // children could be a single argument that is an Array or it could be
+  // multiple arguments depending on the JSX version
+  _.each(children, (child) => {
+    handleChild(child);
   });
 
   return elem;

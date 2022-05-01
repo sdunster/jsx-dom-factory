@@ -4,7 +4,7 @@
   "description": "Factory for JSX-transpiled elements that uses document.createElement",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .ts,.js --max-warnings=0 ."
   },
   "author": "Sam Dunster",
   "license": "MIT",
@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/sdunster/jsx-dom-factory/issues"
   },
-  "homepage": "https://github.com/sdunster/jsx-dom-factory#readme"
+  "homepage": "https://github.com/sdunster/jsx-dom-factory#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
 }
