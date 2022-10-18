@@ -9,7 +9,7 @@
   "author": "Sam Dunster",
   "license": "MIT",
   "dependencies": {
-    "underscore": "^1.8.3"
+    "underscore": "^1.13.6"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sdunster/jsx-dom-factory#readme",
   "devDependencies": {
-    "eslint": "^8.14.0",
+    "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
   }
